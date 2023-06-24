@@ -15,7 +15,7 @@ form.addEventListener('submit', function(e){
     const phoneNumber= e.target[1].value
     const postCode= e.target[2].value
 
-    if(!email | !postCode | !phoneNumber){
+    if(!email || !postCode || !phoneNumber){
         const warning= document.createElement('p')
         warning.classList.add('warning')
         warning.innerText= 'Please fillup all inputs'
